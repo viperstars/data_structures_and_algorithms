@@ -7,7 +7,7 @@ class BinaryTreeByList(object):
         self.tree = [root, left, right]
 
     def is_node(self):
-        return self.tree[0] is not None and self.tree[1] is None and self.tree[2] is None
+        return self.tree[1] is None and self.tree[2] is None
 
     def root(self):
         return self.tree[0]

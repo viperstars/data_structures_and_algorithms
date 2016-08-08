@@ -1,14 +1,14 @@
 def bubble_sort(lst):
     for i in range(len(lst)):
-        for j in range(i, len(lst) - 1):
-            if lst[i] > lst[j - 1]:
-                lst[i], lst[j - 1] = lst[j - 1], lst[i]
+        for j in range(i, len(lst)):
+            if lst[i] > lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
 
 
 def insertion_sort(lst):
     for i in range(0, len(lst)):
         j = i
-        while j > 1 and lst[j] < lst[j - 1]:
+        while j > 0 and lst[j] < lst[j - 1]:
             lst[j], lst[j - 1] = lst[j - 1], lst[j]
             j -= 1
 
